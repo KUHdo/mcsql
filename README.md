@@ -9,10 +9,10 @@ docker run \
     --env PREFIX=myprefix \
     --env RM_OLDER_THAN=10 \
     --env MYSQL_HOST=mysql \
-    --env MYSQL_PASSWORD=password \
-    --env S3_HOST= https://... \
-    --env S3_KEY= ...\
-    --env S3_SECRET= ...\
+    --env MYSQL_PASSWORD=<MYSQL_ROOT_PASSWORD> \
+    --env S3_HOST=<YOUR_S3_BUCKET_HOST> \
+    --env S3_KEY=<YOUR_S3_KEY> \
+    --env S3_SECRET=<YOUR_S3_SECRET> \
     --env S3_BUCKET=mybucket/backups/mysql \
     kuhdo/mcsql
 ```
